@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyCast - Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body class="clear">
+  <div class="weather-app">
+    <header>
+      <img src="images/logo.png" alt="SkyCast Logo" class="logo" />
+      <h1>SkyCast</h1>
+      <p id="localTime">Loading local time...</p>
+    </header>
+
+    <main>
+      <div class="search">
+        <input type="text" placeholder="Enter city name..." id="cityInput" />
+        <button id="searchBtn">Search</button>
+        <button id="geoBtn">Use My Location</button>
+        <button id="unitToggle">°F / °C</button>
+      </div>
+
+      <div class="weather-info">
+        <img src="images/clear.png" alt="Weather Icon" class="weather-icon" id="weatherIcon" />
+        <h2 id="temperature">24°C</h2>
+        <h3 id="description">Clear Sky</h3>
+        <p id="location">Laramie, WY</p>
+
+        <div class="extra-info">
+          <div><img src="images/humidity.png" alt="Humidity" /> <span id="humidity">55%</span></div>
+          <div><img src="images/wind.png" alt="Wind" /> <span id="wind">14 km/h</span></div>
+        </div>
+      </div>
+
+      <section class="forecast">
+        <h3>5-Day Forecast</h3>
+        <div id="forecastContainer"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Powered by OpenWeatherMap API | © 2025 SkyCast</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

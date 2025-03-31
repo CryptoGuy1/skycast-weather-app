@@ -1,0 +1,159 @@
+/* style.css - SkyCast Weather App */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-app {
+  background: rgba(255, 243, 230, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  text-align: center;
+}
+
+header .logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #d55c00;
+}
+
+header p {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.search {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 60%;
+  font-size: 1rem;
+}
+
+.search button {
+  background: #ff7f50;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.search button:hover {
+  background: #e06c38;
+}
+
+.weather-info {
+  margin-top: 1rem;
+}
+
+.weather-icon {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.weather-info h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #ff5e00;
+}
+
+.weather-info h3 {
+  margin: 0.2rem 0;
+  font-weight: normal;
+  color: #555;
+}
+
+.weather-info p#location {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.extra-info {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.extra-info div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.extra-info img {
+  width: 20px;
+  height: 20px;
+}
+
+.forecast {
+  margin-top: 2rem;
+}
+
+.forecast h3 {
+  margin-bottom: 1rem;
+  color: #d55c00;
+}
+
+#forecastContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.forecast-card {
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: 10px;
+  width: 90px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card img {
+  width: 40px;
+  height: 40px;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #aaa;
+}
